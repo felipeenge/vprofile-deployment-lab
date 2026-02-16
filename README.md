@@ -1,30 +1,61 @@
-<<<<<<< HEAD
-# Prerequisites
-#
-- JDK 17 or 21
-- Maven 3.9
-- MySQL 8
+## 📌 Project Basis
 
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- Tomcat
+This project was used as a basis for studies and practical deployment.
+Original Repository: https://github.com/hkhcoder/vprofile-project
+
+# 🚀 VProfile Deployment Lab
+
+Hands-on project focused on provisioning and deploying the VProfile application in a Linux environment using DevOps practices.
+
+---
+
+## 📌 Objective
+
+Perform a full deployment of the VProfile application by manually configuring all required services and resolving compatibility and dependency issues.
+
+---
+
+## 🏗️ Application Architecture
+
+The application stack includes:
+
+- Java (Tomcat)
 - MySQL
 - Memcached
-- Rabbitmq
-- ElasticSearch
-# Database
-Here,we used Mysql DB 
-sql dump file:
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+- RabbitMQ
 
+---
 
-=======
-# vprofile-deployment-lab
-This repo was forked from hkhcoder/vprofile-project
->>>>>>> 1b396919823d93e2ac103d69f87ad64c69ed7dcd
+## ⚙️ Technologies Used
+
+- Linux
+- Git
+- Apache Tomcat
+- MySQL
+- Memcached
+- RabbitMQ
+- Maven
+
+---
+
+## 🔧 Steps Performed
+
+- Cloned the base project
+- Built the application using Maven
+- Configured the database
+- Configured RabbitMQ
+- Configured Memcached
+- Adjusted Tomcat version (fixed compatibility issue)
+- Deployed the `.war` file
+- Validated application functionality
+
+---
+
+## 🐛 Issues Encountered
+
+### ❗ Tomcat Version Incompatibility
+The application failed to start due to an incorrect Tomcat version installed on the server.
+Solution:
+Installed the compatible Tomcat version required by the project.
+
+---
