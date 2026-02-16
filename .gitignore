@@ -31,3 +31,4 @@ temp/
 
 # Environment files
 *.env
+application.properties
